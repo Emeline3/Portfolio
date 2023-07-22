@@ -1,0 +1,5 @@
+DirectoryIndex index.html
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^emeline-bonin\.fr [NC]
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI}
